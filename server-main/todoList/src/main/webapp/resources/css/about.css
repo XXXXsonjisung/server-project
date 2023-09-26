@@ -1,0 +1,61 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.pageAll {
+    background-color: white;
+    margin: 0;
+    display: flex;
+    width: auto;
+    height: 955px;
+    justify-content: center;
+    align-items: center;
+}
+
+.no1Page {
+    display: flex;
+    background-image: url(/todoList/src/main/webapp/img/about/xxx.png);
+    width: 700px;
+    height: 830px;
+    background-size: cover;
+    flex-direction: column;
+    background-position: center top -28px;
+}
+
+.no1Logo {
+    flex-basis: 23%;
+    padding: 0;
+}
+
+.no1Logo img {
+    margin-top: 19px ;
+    margin-bottom: 0;
+    margin-left: 250px;
+}
+
+.no1L1 {
+    flex-basis: 27%;
+}
+
+.no1L1 img {
+    margin-left: 90px;
+}
+
+.no1L2 {
+    flex-basis: 25%;
+}
+
+.no1L2 img {
+    margin-top: 80px;
+    margin-left: 90px;
+    margin-bottom: 0px;
+}
+
+.back {
+    flex-basis: 25%;
+}
+
+.back img {
+    margin-left: 490px;
+}

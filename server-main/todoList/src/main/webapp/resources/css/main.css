@@ -1,0 +1,115 @@
+
+#by {
+    margin-top: 4px;
+    padding: 0;
+}
+
+.allPage {
+    width: auto;
+    height: 1100px;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainPage {
+    height: 1100px;
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/todoList/src/main/webapp/img/main/mainMMM.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.mainPage1 {
+    flex-basis: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainPage2 {
+    flex-basis: 30%;
+    display: flex;
+}
+
+.mainPage3 {
+    flex-basis: 30%;
+    display: flex;
+}
+
+.mainPage4 {
+    flex-basis: 35%;
+    display: flex;
+}
+
+.Logo {
+    height: auto;
+    width: 100px;
+}
+
+.Logo img {
+    margin-top: 3px;
+    margin-left: 20px;
+}
+
+.Profile {
+    height: auto;
+    width: 100px;
+}
+
+.Profile img {
+    margin-top: 3px;
+    margin-left: 55px;
+}
+
+.MP2-1 {
+    flex-basis: 40%;
+}
+
+.MP2-1 img {
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.MP2-2 {
+    flex-basis: 30%;
+}
+
+.MP2-2 img {
+    margin-top: 85px;
+    margin-left: 15px;
+    
+}
+
+.MP2-3 {
+    flex-basis: 30%;
+}
+
+.MP2-3 img {
+    margin-top: 130px;
+}
+
+.mp3 img {
+    margin-left: 25px;
+}
+
+.MP4-1 {
+    flex-basis: 60%;
+}
+
+.MP4-1 img {
+    margin-left: 40px;
+}
+
+.MP4-2 {
+    flex-basis: 40%;
+}
+
+.MP4-2 img {
+    margin-left: 60px;
+    margin-top: 103px;
+}

@@ -1,0 +1,36 @@
+package edu.kh.member.controller;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/login")
+public class LoginController extends HttpServlet {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // 로그인 폼을 보여주는 로직을 작성
+        request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
+    }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // 사용자가 제출한 로그인 폼 데이터 처리
+        String userId = request.getParameter("userId");
+        String userPw = request.getParameter("userPw");
+
+        // 여기서 실제 로그인 로직을 수행하고 성공 또는 실패에 따른 처리를 할 수 있습니다.
+        // 이 예제에서는 단순히 성공 시 "Welcome, [사용자명]" 메시지를 출력하고,
+        // 실패 시 "로그인 실패" 메시지를 출력합니다.
+        if ("user".equals(userId) && "password".equals(userPw)) {
+            String message = "Welcome, " + userId;
+            request.setAttribute("message", message);
+            request.getRequestDispatcher("/WEB-INF/views/welcome.jsp").forward(request, response);
+        } else {
+            String errorMessage = "로그인 실패. 아이디 또는 비밀번호가 올바르지 않습니다.";
+            request.setAttribute("errorMessage", errorMessage);
+            request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
+        }
+    }
+}
